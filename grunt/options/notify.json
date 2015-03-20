@@ -1,0 +1,12 @@
+{
+  "postCommit" : {
+    "options" : {
+      "message" : "You've just commited your code! Push to build."
+    }
+  },
+  "connect" : {
+    "options" : {
+      "message" : "Server started at port: <%= grunt._config.APP_PORT %>"
+    }
+  }
+}

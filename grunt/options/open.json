@@ -1,0 +1,5 @@
+{
+  "dev" : {
+    "path" : "http://127.0.0.1:<%= grunt._config.APP_PORT %>/index.html"
+  }
+}

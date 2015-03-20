@@ -1,0 +1,16 @@
+{
+  "options" : {
+    "color"     : true,
+    "directory" : "<%= grunt._config.SRC_PATH %>/bower_components"
+  },
+  "prod" : {
+    "options" : {
+      "production" : true
+    }
+  },
+  "dev" : {
+    "options" : {
+      "production" : false
+    }
+  }
+}

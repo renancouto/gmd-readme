@@ -1,0 +1,8 @@
+{
+  "all" : {
+    "expand" : true,
+    "cwd"    : "<%= grunt._config.DIST_PATH %>/css",
+    "src"    : "*.css",
+    "dest"   : "<%= grunt._config.DIST_PATH %>/css"
+  }
+}

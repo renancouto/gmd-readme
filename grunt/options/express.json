@@ -1,0 +1,8 @@
+{
+  "dev" : {
+    "options" : {
+      "script" : "index.js",
+      "port"   : "<%= grunt._config.APP_PORT %>"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "APP_NAME" : "GMD GH-Pages",
+
+  "APP_PORT"   : 3801,
+  "WATCH_PORT" : 35729,
+
+  "SRC_PATH"  : "./src",
+  "DIST_PATH" : "./"
+}

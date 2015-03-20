@@ -1,0 +1,27 @@
+//- stylesheet files
+mixin css(url)
+  - var external = url.substr(0, 2) === '//'
+  - var prefix = external ? '' : 'css/'
+  - var noExt = url.substr(-1) === '!'
+  - if (noExt) url = url.substr(0, url.length - 1)
+  - var ext = noExt ? '' : postfix + '.css'
+  link(rel='stylesheet', href='#{prefix}#{url}#{ext}', type='text/css')
+
+//- javascript files
+mixin js(url)
+  - var external = url.substr(0, 2) === '//'
+  - var prefix = external ? '' : 'js/'
+  - var noExt = url.substr(-1) === '!'
+  - if (noExt) url = url.substr(0, url.length - 1)
+  - var ext = noExt ? '' : postfix + '.js'
+  script(src='#{prefix}#{url}#{ext}')
+
+//- google fonts
+mixin google-fonts(fonts)
+  link(rel='stylesheet', href='//fonts.googleapis.com/css?family=#{fonts}', type='text/css')
+
+//- include block with comments
+mixin doc(message)
+  <!-- #{message} START -->
+  block
+  <!-- #{message} END -->

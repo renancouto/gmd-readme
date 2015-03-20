@@ -1,0 +1,32 @@
+{
+  "options" : {
+    "livereload" : true
+  },
+
+  "express" : {
+    "files"   : [ "index.js" ],
+    "tasks"   : [ "express:dev" ],
+    "options" : {
+      "spawn" : false
+    }
+  },
+
+  "html" : {
+    "files" : [ "<%= grunt._config.SRC_PATH %>/**/*.jade", "<%= grunt._config.SRC_PATH %>/data/*.json" ],
+    "tasks" : [ "html" ]
+  },
+
+  "css" : {
+    "files" : [ "<%= grunt._config.SRC_PATH %>/**/*.{scss,sass}" ],
+    "tasks" : [ "css" ]
+  },
+
+  "js" : {
+    "files" : [ "<%= grunt._config.SRC_PATH %>/js/*.js" ],
+    "tasks" : [ "js" ]
+  },
+
+  "grunt" : {
+    "files" : [ "<%= grunt._config.SRC_PATH %>/grunt/**, Gruntfile.js" ]
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "dist"   : [ "<%= grunt._config.DIST_PATH %>/*.html", "<%= grunt._config.DIST_PATH %>/{font,css,img,js}" ],
+  "vendor" : [ "<%= grunt._config.SRC_PATH %>/{js,css}/vendor/*", "!<%= grunt._config.SRC_PATH %>/js/vendor/*.ns.*" ]
+}

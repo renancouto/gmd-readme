@@ -1,0 +1,10 @@
+{
+  "options" : {
+    "jshintrc" : true
+  },
+  "files" : {
+    "expand" : true,
+    "cwd"    : "<%= grunt._config.SRC_PATH %>",
+    "src"    : [ "js/{app,utils}/*.js" ]
+  }
+}

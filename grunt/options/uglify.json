@@ -1,0 +1,10 @@
+{
+  "files" : {
+    "expand" : true,
+    "cwd"    : "<%= grunt._config.DIST_PATH %>/js/",
+    "src"    : [ "**/*.js", "!**/*.min.js" ],
+    "dest"   : "<%= grunt._config.DIST_PATH %>/js/",
+    "extDot" : "last",
+    "ext"    : ".min.js"
+  }
+}

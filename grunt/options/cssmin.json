@@ -1,0 +1,9 @@
+{
+  "files" : {
+    "expand" : true,
+    "cwd"    : "<%= grunt._config.DIST_PATH %>/css/",
+    "src"    : [ "*.css", "!*.min.css" ],
+    "dest"   : "<%= grunt._config.DIST_PATH %>/css/",
+    "ext"    : ".min.css"
+  }
+}
