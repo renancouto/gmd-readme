@@ -1,0 +1,13 @@
+// Body
+
+$selector: 'body'
+
+.#{$selector}
+  +breakpoint(md)
+    background: $md-color-grey--200
+
+  &:before
+    content: ''
+    position: absolute
+    background: $md-color-blue--400
+    +size(100% value($units, bar-height))

@@ -1,0 +1,26 @@
+// FAB
+
+$selector: 'fab'
+
+.#{$selector}
+  $dim: value($units, fab-dim)
+
+  background: $md-color-light-green--500
+  border-radius: 50%
+  box-shadow: value($shadows, 1)
+  position: fixed
+  right: $dim/3
+  bottom: $dim/3
+  transition: 0.2s
+  z-index: 1
+  +size($dim)
+
+  +breakpoint(md)
+    bottom: auto
+    top: value($units, bar-height) - $dim/2
+
+  +breakpoint(lg)
+    right: $dim
+
+  &:hover
+    box-shadow: value($shadows, 2)

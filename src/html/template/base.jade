@@ -32,8 +32,7 @@ html.root(class='no-js', lang='en-US')
     block styles
 
   body.body(class=bodyClass)
-    .main-wrapper
-      block content
+    block content
 
     //- Scripts
     if settings && settings.env === 'development'

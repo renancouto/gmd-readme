@@ -1,0 +1,11 @@
+// Breakpoints
+
+=breakpoint($point, $orientation: null)
+
+  @if $orientation
+    @media screen and (min-width: value($breakpoints, $point)) and (orientation: $orientation)
+      @content
+
+  @else
+    @media screen and (min-width: value($breakpoints, $point))
+      @content
