@@ -32,5 +32,12 @@ module.exports = {
     cwd    : '<%= grunt._config.SRC_PATH %>/font',
     src    : '*.{eot,woff2,woff,ttf,svg}',
     dest   : '<%= grunt._config.DIST_PATH %>/font'
+  },
+
+  images : {
+    expand : true,
+    cwd    : '<%= grunt._config.SRC_PATH %>/img',
+    src    : '*.{jpg,png,gif,svg,ico}',
+    dest   : '<%= grunt._config.DIST_PATH %>/img'
   }
 };

@@ -9,6 +9,7 @@ module.exports = function (grunt) {
   grunt.registerTask('html', [ 'jade' ]);
   grunt.registerTask('css', [ 'sass', 'newer:autoprefixer', 'newer:cmq' ]);
   grunt.registerTask('js', [ 'newer:jshint', 'browserify' ]);
+  grunt.registerTask('img', [ 'copy:images' ]);
   grunt.registerTask('server', [ 'express', 'open', 'watch' ]);
 
   // Bundle (groups of singles)
@@ -18,4 +19,5 @@ module.exports = function (grunt) {
 
   // Standalone (started manually by the user)
   grunt.registerTask('bower', [ 'clean:vendor', 'bower-install-simple:dev', 'concurrent:bower-copy' ]);
+  grunt.registerTask('images', [ 'newer:imagemin' ]);
 };

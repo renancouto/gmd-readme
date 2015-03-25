@@ -1,0 +1,12 @@
+// Functions
+
+// Get value from map
+@function value($map, $key, $unquoted: false)
+  @if map-has-key($map, $key)
+    @if $unquoted
+      @return unquote(map-get($map, $key))
+    @else
+      @return map-get($map, $key)
+
+  @warn "Unknown `#{$key}` in `#{$map}.`"
+  @return null

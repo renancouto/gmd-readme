@@ -53,6 +53,7 @@
   "devDependencies": {
     "express": "^4.12.3",
     "grunt-bower-install-simple": "^1.1.0",
+    "grunt-contrib-imagemin": "^0.9.4",
     "grunt-express-server": "^0.4.19",
     "grunt-notify": "^0.4.1",
     "grunt-open": "^0.2.3",

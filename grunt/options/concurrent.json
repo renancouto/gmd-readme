@@ -1,6 +1,6 @@
 {
   "clean"      : [ "clean:dist" ],
-  "assets"     : [ "html", "css", "js", "copy:fonts", "copy:js" ],
+  "assets"     : [ "img", "html", "css", "js", "copy:fonts", "copy:js" ],
   "minify"     : [ "cssmin", "uglify" ],
   "bower-copy" : [ "copy:bower-normalize-css" ]
 }
