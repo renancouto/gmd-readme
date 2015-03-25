@@ -3,10 +3,11 @@ extends ./template/base
 
 //- content
 block content
-  .fab
+  a.fab(href='#', title='View on Github')
+    include ../img/icon-github.svg
 
   .main-wrapper
-    .card
+    article.card
       header.card__header
         h1.card__heading Google Material Design
       

@@ -57,6 +57,7 @@
     "grunt-express-server": "^0.4.19",
     "grunt-notify": "^0.4.1",
     "grunt-open": "^0.2.3",
+    "grunt-svgmin": "^2.0.1",
     "mocha": "^2.2.1",
     "pre-commit": "^1.0.6"
   }

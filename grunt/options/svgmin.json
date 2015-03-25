@@ -1,0 +1,8 @@
+{
+  "files" : {
+    "expand" : true,
+    "cwd"    : "<%= grunt._config.SRC_PATH %>/img/",
+    "src"    : "*.svg",
+    "dest"   : "<%= grunt._config.SRC_PATH %>/img/"
+  }
+}

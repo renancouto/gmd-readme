@@ -19,5 +19,5 @@ module.exports = function (grunt) {
 
   // Standalone (started manually by the user)
   grunt.registerTask('bower', [ 'clean:vendor', 'bower-install-simple:dev', 'concurrent:bower-copy' ]);
-  grunt.registerTask('images', [ 'newer:imagemin' ]);
+  grunt.registerTask('images', [ 'newer:imagemin', 'newer:svgmin' ]);
 };

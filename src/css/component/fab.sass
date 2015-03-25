@@ -8,6 +8,10 @@ $selector: 'fab'
   background: $md-color-light-green--500
   border-radius: 50%
   box-shadow: value($shadows, 1)
+  color: #fff
+  display: flex
+  flex-direction: column
+  justify-content: center
   position: fixed
   right: $dim/3
   bottom: $dim/3
@@ -20,7 +24,11 @@ $selector: 'fab'
     top: value($units, bar-height) - $dim/2
 
   +breakpoint(lg)
-    right: $dim
+    right: $dim/2
 
   &:hover
     box-shadow: value($shadows, 2)
+
+  svg
+    transform: scale(1.25)
+    margin: auto

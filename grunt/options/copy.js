@@ -37,7 +37,7 @@ module.exports = {
   images : {
     expand : true,
     cwd    : '<%= grunt._config.SRC_PATH %>/img',
-    src    : '*.{jpg,png,gif,svg,ico}',
+    src    : '*.{jpg,png,gif,ico}',
     dest   : '<%= grunt._config.DIST_PATH %>/img'
   }
 };
