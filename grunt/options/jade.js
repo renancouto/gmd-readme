@@ -12,10 +12,11 @@ module.exports = function (grunt) {
           config : grunt._config,
           data   : grunt._data,
           settings : {
-            env       : process.env.NODE_ENV,
-            buildId   : process.env.CI_BUILD_NUMBER || 'local-build',
-            buildUrl  : process.env.CI_BUILD_URL || '#local-build',
-            buildDate : Date.now()
+            env         : process.env.NODE_ENV,
+            analyticsId : process.env.ANALYTICS_ID,
+            buildId     : process.env.CI_BUILD_NUMBER || 'local-build',
+            buildUrl    : process.env.CI_BUILD_URL || '#local-build',
+            buildDate   : Date.now()
           }
         }
       },
