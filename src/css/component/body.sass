@@ -4,10 +4,10 @@ $selector: 'body'
 
 .#{$selector}
   +breakpoint(md)
-    background: $md-color-grey--200
+    background: value($settings, bg-color)
 
   &:before
     content: ''
-    position: absolute
-    background: $md-color-blue--400
-    +size(100% value($units, bar-height))
+    position: fixed
+    background: value($settings, bar-color)
+    +size(100% value($settings, bar-height))

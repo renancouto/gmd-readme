@@ -1,7 +1,7 @@
 {
-  "name": "gmd-gh-pages",
-  "version": "0.0.0",
-  "description": "Google Material Design Github Pages theme",
+  "name": "gmd-readme",
+  "version": "0.1.0",
+  "description": "Google Material Design Theme for your README.md files",
   "main": "index.js",
   "scripts": {
     "start": "./node_modules/.bin/grunt",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:renancouto/gmd-gh-pages.git"
+    "url": "git@github.com:renancouto/gmd-readme.git"
   },
   "keywords": [
     "google",
@@ -22,10 +22,12 @@
   "pre-commit": [
     "precommit"
   ],
-  "author": "Renan Couto",
+  "authors": [
+    "Renan Couto <renancouto@gmail.com>"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/renancouto/gmd-gh-pages/issues"
+    "url": "https://github.com/renancouto/gmd-readme/issues"
   },
   "dependencies": {
     "grunt": "^0.4.5",

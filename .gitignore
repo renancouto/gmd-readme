@@ -1,7 +1,7 @@
 node_modules
 *.log
 .sass-cache
-index.html
+*.html
 css/
 img/
 !src/**

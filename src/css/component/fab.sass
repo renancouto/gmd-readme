@@ -3,12 +3,11 @@
 $selector: 'fab'
 
 .#{$selector}
-  $dim: value($units, fab-dim)
+  $dim: value($settings, fab-dim)
 
-  background: $md-color-light-green--500
+  background: value($settings, fab-color)
   border-radius: 50%
   box-shadow: value($shadows, 1)
-  color: #fff
   display: flex
   flex-direction: column
   justify-content: center
@@ -19,9 +18,12 @@ $selector: 'fab'
   z-index: 1
   +size($dim)
 
+  .body &
+    color: value($settings, icon-color)
+
   +breakpoint(md)
     bottom: auto
-    top: value($units, bar-height) - $dim/2
+    top: value($settings, bar-height) - $dim/2
 
   +breakpoint(lg)
     right: $dim/2

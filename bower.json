@@ -1,8 +1,8 @@
 {
-  "name": "gmd-gh-pages",
+  "name": "gmd-readme",
   "main": "index.js",
-  "version": "0.0.0",
-  "homepage": "https://github.com/renancouto/gmd-gh-pages",
+  "version": "0.1.0",
+  "homepage": "https://github.com/renancouto/gmd-readme",
   "authors": [
     "Renan Couto <renancouto@gmail.com>"
   ],

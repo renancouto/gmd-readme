@@ -3,13 +3,29 @@ extends ./template/base
 
 //- content
 block content
-  a.fab(href='#', title='View on Github')
+  a.fab(href='https://github.com/renancouto/gmd-readme', title='View on Github')
     include ../img/icon-github.svg
 
   .main-wrapper
     article.card
       header.card__header
-        h1.card__heading Google Material Design
-      
+        h1.card__heading GMD Readme
+
       section.card__content
-        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ullam totam, tempora odio, sit voluptate voluptatum minus iusto ipsam maxime dolor eveniet commodi vel atque tenetur autem alias, vitae dolorum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga rerum, atque enim illo voluptates, reprehenderit laudantium aut magni laborum corporis sit. Distinctio ullam quam maxime accusantium doloremque quas, porro tempora. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo ab incidunt ea sit quas dolores ducimus nobis possimus. Eveniet quasi fugit numquam facere, ratione quis asperiores rerum amet laudantium dolores!
+        blockquote Google's Material Design Theme for your README.md files
+
+        h2 Usage
+
+        ul
+          li clone this repo: <code>git clone git@github.com:renancouto/gmd-readme.git</code>
+          li install its dependencies: <code>npm install</code>
+          li modify the contents on the <code>src/html/index.jade</code> file to suit your needs
+          li build it: <code>npm start</code>
+
+        h2 Thanks to
+
+        ul
+          li <a href="https://dribbble.com/kyleledbetter">Kyle Ledbetter</a> for the <a href="https://dribbble.com/shots/1910686-Material-Design-Wallpaper-Free-Sketch-Template">wallpapers</a>
+
+        h2 Licence
+        p MIT
