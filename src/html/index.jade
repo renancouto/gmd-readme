@@ -8,24 +8,4 @@ block content
 
   .main-wrapper
     article.card
-      header.card__header
-        h1.card__heading GMD Readme
-
-      section.card__content
-        blockquote Google's Material Design Theme for your README.md files
-
-        h2 Usage
-
-        ul
-          li clone this repo: <code>git clone git@github.com:renancouto/gmd-readme.git</code>
-          li install its dependencies: <code>npm install</code>
-          li modify the contents on the <code>src/html/index.jade</code> file to suit your needs
-          li build it: <code>npm start</code>
-
-        h2 Thanks to
-
-        ul
-          li <a href="https://dribbble.com/kyleledbetter">Kyle Ledbetter</a> for the <a href="https://dribbble.com/shots/1910686-Material-Design-Wallpaper-Free-Sketch-Template">wallpapers</a>
-
-        h2 Licence
-        p MIT
+      include:markdown ../../README.md

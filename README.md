@@ -4,7 +4,7 @@
 ## Usage
 - clone this repo: `git clone git@github.com:renancouto/gmd-readme.git`
 - install its dependencies: `npm install`
-- modify the contents on the `src/html/index.jade` file to suit your needs
+- modify the contents on the `README.md` file to suit your needs
 - build it: `npm start`
 
 ## Thanks to

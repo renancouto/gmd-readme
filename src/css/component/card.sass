@@ -3,33 +3,31 @@
 $selector: 'card'
 
 .#{$selector}
+  $pad: 2rem
+  $br:  2px
+
   background: #fff
+  line-height: 1.6
+  padding: $pad
   position: relative
 
   +breakpoint(md)
-    border-radius: 2px
+    border-radius: $br
     box-shadow: value($shadows, 1)
     margin: 1rem
+    padding: $pad * 2
 
-  &__header
+  h1:first-child
     background: url(value($settings, hero-img)) bottom
-    padding: 8rem 2rem 2em
-
-    +breakpoint(md)
-      padding: 14rem 4rem 3rem
-
-  &__heading
+    border-radius: $br $br 0 0
     color: #fff
     font-size: 2.4rem
     font-weight: 400
+    margin: (-$pad) (-$pad) $pad
+    padding: 8rem $pad $pad
     line-height: 1.2
 
     +breakpoint(md)
+      margin: (-$pad * 2) (-$pad * 2) $pad
+      padding: 14rem $pad * 2 3rem
       font-size: 3rem
-
-  &__content
-    padding: 2rem
-    line-height: 1.6
-
-    +breakpoint(md)
-      padding: 4rem
